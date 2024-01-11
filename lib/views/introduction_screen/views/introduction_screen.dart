@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_satu_pt_bionic/views/home_screen/views/home_screen.dart';
+import 'package:test_satu_pt_bionic/views/login_screen/views/login_screen.dart';
 
-import '../../../main.dart';
 import '../../../utils/constant.dart';
 
 class IntroductionScreen extends StatefulWidget {
+  static const String routeName = 'home-screen';
   const IntroductionScreen({super.key});
 
   @override
@@ -54,11 +54,8 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                 width: constant.size.width * 0.550,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HomeNavigation(),
-                        ));
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, LoginScreen.routeName, (route) => false);
                   },
                   child: Center(
                     child: Text(
