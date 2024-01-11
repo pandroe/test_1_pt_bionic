@@ -14,9 +14,10 @@ class Constant {
 
   static const int purpleColorLight = 0xFF9934C9;
   static const int purpleColorDark = 0xFF4D196B;
-  static const int orangeColorLight = 0xFF1E1C24;
-  static const int orangeColorDark = 0xFFFD5216;
-  static const int witheColorLight = 0xFFFFFFFF;
+  static const int orangeColorDark = 0xFFFA5614;
+  static const int orangeColorLight = 0xFFF68A28;
+  static const int whiteColorLight = 0xFFFFFFFF;
+  static const int whiteColorBase = 0xFFFAFAFA;
 
   final Size size;
 
