@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_satu_pt_bionic/utils/constant.dart';
 import 'package:test_satu_pt_bionic/views/home_screen/views/home_screen.dart';
 import 'package:test_satu_pt_bionic/views/introduction_screen/views/introduction_screen.dart';
+import 'package:test_satu_pt_bionic/views/literatur_screen/views/literatur_screen.dart';
 import 'package:test_satu_pt_bionic/views/login_screen/views/login_screen.dart';
 
 void main() {
@@ -35,9 +36,7 @@ class HomeNavigation extends StatefulWidget {
 class _HomeNavigationState extends State<HomeNavigation> {
   int _currentIndex = 0;
 
-  final List<Widget> _children = [
-    HomeScreen(),
-  ];
+  final List<Widget> _children = [HomeScreen(), LiteraturScreen()];
 
   @override
   Widget build(BuildContext context) {
