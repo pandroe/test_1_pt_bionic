@@ -18,6 +18,7 @@ class Constant {
   static const int orangeColorLight = 0xFFF68A28;
   static const int whiteColorLight = 0xFFFFFFFF;
   static const int whiteColorBase = 0xFFFAFAFA;
+  static const int blackColorLight = 0xFF302E37;
 
   final Size size;
 

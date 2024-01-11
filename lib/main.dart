@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_satu_pt_bionic/utils/constant.dart';
 import 'package:test_satu_pt_bionic/views/home_screen/views/home_screen.dart';
 import 'package:test_satu_pt_bionic/views/introduction_screen/views/introduction_screen.dart';
+import 'package:test_satu_pt_bionic/views/login_screen/views/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
+        LoginScreen.routeName: (context) => const LoginScreen(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
