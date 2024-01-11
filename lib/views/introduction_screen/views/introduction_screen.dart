@@ -16,8 +16,15 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
   Widget build(BuildContext context) {
     Constant constant = Constant(context);
     return Scaffold(
-        backgroundColor: Color(Constant.purpleColorLight),
-        body: Padding(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+                'assets/images/bg-introduction.png'), // Ganti dengan path gambar yang sesuai
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Padding(
           padding: const EdgeInsets.only(top: 60.0, right: 18.0, left: 18.0),
           child: Column(
             children: [
@@ -70,6 +77,8 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
               )
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
